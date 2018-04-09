@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>双旦送好礼 礼炮连连发</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1">
+		<meta name="format-detection" content="telephone=no" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="banner">
+			<img src="images/banner.jpg" alt="" />
+			<div class="login-bar">
+				<!-- 登录状态 -->
+				<span>12314344546</span>
+				<!-- 未登录状态 -->
+				<a style="display: none;" href="#">登录</a></div>	
+		</div>
+		<div class="bg2">
+			<ul class="awards-list clearfix">
+				<li class="received">
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">已领取</span>
+				</li>
+				<li class="receive-day">
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">领取</span>
+				</li>
+				<li>
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">未领取</span>
+				</li>
+				<li>
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">未领取</span>
+				</li>
+				<li>
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">未领取</span>
+				</li>
+				<li>
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">未领取</span>
+				</li>
+				<li>
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">未领取</span>
+				</li>
+				<li>
+					<img src="images/award-pic.png" alt="" />
+					<span class="btn">未领取</span>
+				</li>
+			</ul>
+			<div class="active-modle">
+				<img class="title" src="images/active-title.png" alt="" />
+				<ul class="active-list">
+					<li>
+						<a href="#"><img src="images/active1.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/active2.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/active3.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/active4.jpg" alt="" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="active-discript">
+				<h4>签到说明</h4>
+				<p>1、活动时间：2017-12-23至2017-1-1；</p>
+				<p>2、活动期间，玩家共有八次领取V币券的机会，累计最多可领取75元V币券；</p>
+				<p>3、每天只能领取一张V币券，且需按顺序领取；</p>
+				<p>4、每天可进入乐商店-游戏-领V币入口签到领取链接加入群【联想暑期活动大本营】：562488586</p>
+			</div>
+			<div class="active-explain">本活动最终解释权归联想乐商店所有</div>
+		</div>
+		
+		<!-- 提示弹层 -->
+		<div class="tips-layer">
+			<div class="inner">
+				<h3 class="title">确认领取</h3>
+				<p class="discript">这个奖品您已领取过啦</p>
+				<button>确定</button>
+			</div>
+		</div>
+	
+		<script src="js/jquery-2.1.4.min.js"></script>	
+		<script src="js/rem.js"></script>
+		<script>
+			$(function(){
+				//显示弹层
+				var $tipsLayer = $(".tips-layer");
+				$(".awards-list").find("li").on("click",function(){
+					$tipsLayer.show();
+					$("html,body").addClass("overhidden")
+				});
+				//关闭弹层
+				$tipsLayer.find("button").on("click",function(){
+					$tipsLayer.hide();
+					$("html,body").removeClass("overhidden")
+				})
+			})
+		</script>
+	</body>
+</html>

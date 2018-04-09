@@ -1,0 +1,51 @@
+/**  
+ * @Description: the stylesheet game topic
+ * @authors: pengml1 (pengml1@lenovo.com)
+ * @date:    2017-12-18
+ * @version: 1.0
+ */ 
+ 
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li,dt,dd,th,td,button,input,form,img{ padding: 0; margin: 0; font-family: 'Microsoft YaHei', Helvetica;}
+html,body{-webkit-text-size-adjust: 100%; background-color: #cd1e3c; -webkit-overflow-scrolling: touch; color: #333;}
+html *{ -webkit-tap-highlight-color: transparent;}
+a{ color: #333; text-decoration: none;}
+img,textarea{ border: 0; vertical-align: middle}
+ul,ol,li{ list-style: none;} 
+i,em{ font-style: normal }
+table{ border-spacing: none; border-collapse: collapse;}
+button,input[type=text],input[type=password],select,textarea{ box-sizing: border-box; -webkit-appearance: none;}
+.clearfix:after{ content: ''; display: block; height: 0; clear: both; visibility: hidden;}
+
+.banner{ position: relative; background-color: #e73a53;}
+.banner img{ width: 100%;}
+.login-bar{ position: absolute; top: .6rem; right: 0; padding: 0 .7rem; height: 1.05rem; font-size: .55rem; line-height: 1.1rem; background: rgba(255,255,255,.5); border-radius: .525rem 0 0 .525rem;}
+
+.bg2{ background: url(../images/bg2.png) no-repeat top center; background-size: 100% 52.45rem;}
+.awards-list{ width: 14.4rem; margin: 0 auto; padding-bottom: 2.5rem;}
+.awards-list li{ float: left; width: 3rem; margin: 1rem .3rem 0;}
+.awards-list li img{ display: block; width: 100%; border-radius: .4rem;}
+.awards-list .btn{ display: block; margin-top: .3rem; width: 100%; height: 1.1rem; line-height: 1.17rem; font-size: .55rem; background-image: -webkit-linear-gradient(to top, #a0a3a5, #cfd2d4); background-image:linear-gradient(to top, #a0a3a5, #cfd2d4); border-radius: .55rem; text-align: center; color: #fff; box-shadow: 0 .1rem 0 rgba(14,73,125,.2); overflow: hidden;}
+.awards-list .received .btn{ background-image: -webkit-linear-gradient(to top, #767676, #afafaf); background-image:linear-gradient(to top, #767676, #afafaf);}
+.awards-list .receive-day .btn{ background-image: -webkit-linear-gradient(to top, #d78229, #f8cf3d); background-image:linear-gradient(to top, #d78229, #f8cf3d);}
+
+.active-modle .title{ display: block; margin: 0 auto; width: 7.1rem;}
+.active-modle .active-list{ width: 15rem; padding-bottom: 0.75rem; margin: 0 auto;}
+.active-modle .active-list li{ margin-top: 0.5rem;}
+.active-modle .active-list li:first-child{ margin-top: 0;}
+.active-modle .active-list a{ display: block;}
+.active-modle .active-list img{ width: 13.75rem; border: 0.625rem solid #9c0c24; border-radius: .4rem;}
+
+.active-discript{ padding: 0 1.35rem 1.2rem; color: #fff;}
+.active-discript h4{ font-size: 0.75rem; line-height: 1.2rem; font-weight: normal;}
+.active-discript p{ line-height: 1rem; font-size: 0.55rem;}
+.active-discript p:nth-of-type(1){ margin-top: 0.3rem;}
+
+.active-explain{ height: 2.2rem; line-height: 2.2rem; background-color: #7b1224; text-align: center; color: #fff; font-size: 0.55rem;}
+
+.tips-layer{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba( 0, 0, 0,.6); z-index: 20; display: none;}
+.tips-layer .inner{ position: absolute; top: 50%; left: 50%; width: 12.5rem; padding: .8rem 0 1rem; background-color: #fff; border-radius: .3rem; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); text-align: center;}
+.tips-layer .inner .title{ font-size: .8rem; line-height: 1.25rem; font-weight: normal;}
+.tips-layer .inner .discript{ color: #666; font-size: .6rem;}
+.tips-layer .inner button{ display: block; margin: .8rem auto 0; width: 5.25rem; height: 1.4rem; background-color: #489fe2; line-height: 1.45rem; font-size: .6rem; text-align: center; border: 0 none; color: #fff; outline: none;}
+.overhidden{ height: 100%; overflow: hidden;}
